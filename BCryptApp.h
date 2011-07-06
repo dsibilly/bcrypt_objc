@@ -33,7 +33,7 @@
 #import <Foundation/Foundation.h>
 #import "DDCli/DDCommandLineInterface.h"
 
-#define CURRENT_MARKETING_VERSION @"0.1"
+#define CURRENT_MARKETING_VERSION @"1.0"
 
 @interface BCryptApp : NSObject <DDCliApplicationDelegate> {
 	// Placeholder ivars for DDCli to populate...
