@@ -33,15 +33,15 @@
 
 
 + (BOOL)check:(NSString*)password
-   storedHash:(NSString*)storedHash
+   againstHash:(NSString*)storedHash
 {
-	return [MABCrypt check:password storedHash:storedHash legacyHandler:nil];
+	return [MABCrypt check:password againstHash:storedHash withLegacyHandler:nil];
 }
 
 
-+ (BOOL)check:(NSString*)password
-        storedHash:(NSString*)storedHash
-     legacyHandler:(LegacyHandler)legacyHandler
++ (BOOL)    check:(NSString*)password
+      againstHash:(NSString*)storedHash
+withLegacyHandler:(LegacyHandler)legacyHandler
 {
 	if ([MABCrypt isLegacyHash:storedHash]) {
 		if (legacyHandler != nil) {
